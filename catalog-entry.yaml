@@ -1,7 +1,7 @@
-name: Shared Mistral 7B LLM Model
+name: Mistral 7B LLM Model Deployment
 
 entries:
-  - title: Shared LLM Model for Hands on Lab
+  - title: Mistral 7B LLM Model Deployment
     label: llm-model-deploy
     short_description: |
       This AMP deploys Mistral AI's Mistral 7B model as a CML API endpoint. Requires a GPU node with 4 vCores and 16 GB memory minimum.
@@ -14,5 +14,5 @@ entries:
       - LLM
       - Mistral AI
       - Model Deployment
-    git_url: "https://github.com/cloudera/CML_AMP_Deploy-Mistral7B-CML-Native-Model"
+    git_url: "https://github.com/kevinbtalbert/CML_GOV_AMP_Deploy-Mistral7B-CML-Native-Model.git"
     is_prototype: true
