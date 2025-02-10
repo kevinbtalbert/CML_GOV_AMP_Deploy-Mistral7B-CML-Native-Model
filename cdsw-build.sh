@@ -17,17 +17,17 @@
 ### INSTALL CUDA 12.4 AND NVIDIA DRIVERS ###
 
 # Create directory for the NVIDIA installer
-mkdir -p /home/cdsw/nvidia-installer
+mkdir -p $HOME/nvidia-installer
 
 # Download the CUDA 12.4 installer
-curl -o /home/cdsw/nvidia-installer/cuda_12.4.0_535.104.05_linux.run \
+curl -o $HOME/nvidia-installer/cuda_12.4.0_535.104.05_linux.run \
      https://developer.download.nvidia.com/compute/cuda/12.4.0/local_installers/cuda_12.4.0_535.104.05_linux.run
 
 # Create the directory to install CUDA
 mkdir -p ~/cuda
 
 # Run the CUDA installer
-bash /home/cdsw/nvidia-installer/cuda_12.4.0_535.104.05_linux.run --no-drm --no-man-page --override --toolkitpath=$HOME/cuda --toolkit --silent
+bash $HOME/nvidia-installer/cuda_12.4.0_535.104.05_linux.run --no-drm --no-man-page --override --toolkitpath=$HOME/cuda --toolkit --silent
 
 # Set CUDA environment variables
 export PATH=${PATH}:$HOME/cuda/bin:$HOME/cuda/nvvm
