@@ -10,18 +10,18 @@ environment_variables:
     default: ""
     description: "Access Token to use Mistral 7B model"
     required: true
-  # PATH:
-  #   default: "${PATH}:$HOME/cuda/bin:$HOME/cuda/nvvm"
-  #   description: "Leave this value as is"
-  #   required: true
-  # LD_LIBRARY_PATH:
-  #   default: "${LD_LIBRARY_PATH}:$HOME/cuda/lib64:$HOME/cuda/nvvm/lib64:$HOME/cuda/nvvm"
-  #   description: "Leave this value as is"
-  #   required: true
-  # CUDA_HOME:
-  #   default: "$HOME/cuda"
-  #   description: "Leave this value as is"
-  #   required: true
+  PATH:
+    default: "${PATH}:$HOME/cuda/bin:$HOME/cuda/nvvm"
+    description: "Leave this value as is"
+    required: true
+  LD_LIBRARY_PATH:
+    default: "${LD_LIBRARY_PATH}:$HOME/cuda/lib64:$HOME/cuda/nvvm/lib64:$HOME/cuda/nvvm"
+    description: "Leave this value as is"
+    required: true
+  CUDA_HOME:
+    default: "$HOME/cuda"
+    description: "Leave this value as is"
+    required: true
 
 runtimes: 
   - editor: PBJ Workbench
