@@ -35,10 +35,10 @@ export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$HOME/cuda/lib64:$HOME/cuda/nvvm/lib64
 export CUDA_HOME=$HOME/cuda
 
 # Persist the environment variables for future sessions
-echo 'export PATH=${PATH}:$HOME/cuda/bin:$HOME/cuda/nvvm' >> ~/.bashrc
-echo 'export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$HOME/cuda/lib64:$HOME/cuda/nvvm/lib64:$HOME/cuda/nvvm' >> ~/.bashrc
-echo 'export CUDA_HOME=$HOME/cuda' >> ~/.bashrc
-source ~/.bashrc
+# echo 'export PATH=${PATH}:$HOME/cuda/bin:$HOME/cuda/nvvm' >> ~/.bashrc
+# echo 'export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$HOME/cuda/lib64:$HOME/cuda/nvvm/lib64:$HOME/cuda/nvvm' >> ~/.bashrc
+# echo 'export CUDA_HOME=$HOME/cuda' >> ~/.bashrc
+# source ~/.bashrc
 
 # Print confirmation
 echo "CUDA environment variables set."
