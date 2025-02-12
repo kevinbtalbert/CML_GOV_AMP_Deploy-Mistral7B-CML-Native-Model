@@ -8,7 +8,7 @@ entries:
     long_description: |
       This AMP deploys Meta's Llama2 7B m model as a CML API endpoint. Requires a GPU node with 4 vCores and 16 GB memory minimum.
       Note the following site settings prerequisite: Go to Site Administration > Settings > Ephemeral Storage Limit (in GB) and ensure value is set to at least 20GB
-    image_path: "https://raw.githubusercontent.com/cloudera/CML_GOV_AMP_Deploy-Llama2-7B-CML-Native-Model/main/images/catalog-entry.jpg"
+    image_path: "https://raw.githubusercontent.com/kevinbtalbert/CML_GOV_AMP_Deploy-Llama2-7B-CML-Native-Model/refs/heads/main/images/catalog-entry.jpg"
     tags: 
       - Llama2 7B
       - LLM
