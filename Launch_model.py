@@ -20,7 +20,7 @@ bnb_config = BitsAndBytesConfig(
 )
 
 # Create a model object with above parameters
-model_name = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+model_name = "meta-llama/Llama-2-7b-chat-hf"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name, 
