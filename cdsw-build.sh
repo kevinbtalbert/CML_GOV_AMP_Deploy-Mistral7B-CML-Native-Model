@@ -80,3 +80,12 @@ pip install --upgrade pip
 pip install --no-cache-dir -r requirements.txt
 
 pip install tokenizers==0.13.0
+
+# Ensure HF_ACCESS_TOKEN is set
+if [ -z "$HF_ACCESS_TOKEN" ]; then
+  echo "Error: HF_ACCESS_TOKEN environment variable is not set."
+  exit 1
+fi
+
+# Log in to Hugging Face CLI without user interaction
+python -c "from huggingface_hub.hf_api import HfFolder; import os; HfFolder.save_token(os.environ.get('HF_ACCESS_TOKEN'))"
