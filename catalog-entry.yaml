@@ -1,18 +1,18 @@
-name: Mistral 7B LLM Model Deployment
+name: Llama2 7B LLM Model Deployment
 
 entries:
-  - title: Mistral 7B LLM Model Deployment
+  - title: Llama2 7B LLM Model Deployment
     label: llm-model-deploy
     short_description: |
-      This AMP deploys Mistral AI's Mistral 7B model as a CML API endpoint. Requires a GPU node with 4 vCores and 16 GB memory minimum.
+      This AMP deploys Meta's Llama2 7B model as a CML API endpoint. Requires a GPU node with 4 vCores and 16 GB memory minimum.
     long_description: |
-      This AMP deploys Mistral AI's Mistral 7B m model as a CML API endpoint. Requires a GPU node with 4 vCores and 16 GB memory minimum.
+      This AMP deploys Meta's Llama2 7B m model as a CML API endpoint. Requires a GPU node with 4 vCores and 16 GB memory minimum.
       Note the following site settings prerequisite: Go to Site Administration > Settings > Ephemeral Storage Limit (in GB) and ensure value is set to at least 20GB
-    image_path: "https://raw.githubusercontent.com/cloudera/CML_AMP_Deploy-Mistral7B-CML-Native-Model/main/images/catalog-entry.png"
+    image_path: "https://raw.githubusercontent.com/cloudera/CML_AMP_Deploy-Mistral7B-CML-Native-Model/main/images/catalog-entry.jpg"
     tags: 
-      - Mistral 7B
+      - Llama2 7B
       - LLM
-      - Mistral AI
+      - Meta
       - Model Deployment
     git_url: "https://github.com/kevinbtalbert/CML_GOV_AMP_Deploy-Mistral7B-CML-Native-Model.git"
     is_prototype: true
