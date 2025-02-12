@@ -1,5 +1,5 @@
 import bitsandbytes as bnb
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, LlamaTokenizer
 import os
 import time
 import torch
@@ -41,7 +41,7 @@ def opt_args_value(args, arg_name, default):
     return default
 
 # Define tokenizer parameters
-tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True, token=hf_access_token)
+tokenizer = LlamaTokenizer.from_pretrained(model_name, trust_remote_code=True, token=hf_access_token)
 tokenizer.pad_token = tokenizer.eos_token
 
 # Mamke the call to 

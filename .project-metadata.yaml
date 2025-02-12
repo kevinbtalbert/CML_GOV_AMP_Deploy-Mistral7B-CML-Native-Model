@@ -1,5 +1,5 @@
-name: Mistral-7B Standalone Model Deployment (Gov Edition)
-description: This AMP deploys Mistral-7b model as a CML model endpoint, callable via an API. Model is hosted within CML and requires GPU node with 16GB memory and 4 cores minimum.
+name: Llama2-7B Standalone Model Deployment (Gov Edition)
+description: This AMP deploys Llama2-7b model as a CML model endpoint, callable via an API. Model is hosted within CML and requires GPU node with 16GB memory and 4 cores minimum.
 author: Cloudera
 date: "2025-1-20"
 specification_version: 1.0
@@ -8,7 +8,7 @@ prototype_version: 1.0
 environment_variables:
   HF_ACCESS_TOKEN:
     default: ""
-    description: "Access Token to use Mistral 7B model"
+    description: "Access Token to use Llama2 7B model"
     required: true
   PATH:
     default: "${PATH}:$HOME/cuda/bin:$HOME/cuda/nvvm"
@@ -30,10 +30,10 @@ runtimes:
   
 tasks:
   - type: create_model
-    name: Mistral-7b
-    entity_label: mistral-7b
-    description: Mistral-7b model hosted in CML. 
-    short_summary: Mistral-7b
+    name: Llama2-7b
+    entity_label: llama2-7b
+    description: Llama2-7b model hosted in CML. 
+    short_summary: Llama2-7b
     default_resources:
       cpu: 4
       memory: 16
@@ -43,8 +43,8 @@ tasks:
       num_replicas: 1
   
   - type: build_model
-    name: Build Mistral 7B model
-    entity_label: mistral-7b
+    name: Build Llama2 7B model
+    entity_label: llama2-7b
     comment: First build by the AMP
     examples:
       - request:
@@ -57,4 +57,4 @@ tasks:
     target_function_name: api_wrapper
 
   - type: deploy_model
-    entity_label: mistral-7b
+    entity_label: llama2-7b
